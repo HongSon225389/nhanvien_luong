@@ -12,14 +12,16 @@ public class Test {
 			System.out.println("Nhan vien "+(i+1));
 			System.out.println("Name : ");
 			String name = sc.next();
+			System.out.println("Year : ");
+			int year = sc.nextInt();
 			System.out.println("Luong : ");
 			double luong = sc.nextDouble();
-			nv[i] = new Nhanvien(name,luong);
+			nv[i] = new Nhanvien(name,year,luong);
 		}
 		sc.close();
 		System.out.println("Danh sach nhan vien va luong : ");
 		for(int i=0;i<n;++i) {
-			System.out.println("Name : " +nv[i].getName() +" - Luong : "+nv[i].getLuong() );
+			System.out.println(nv[i].getName() +" - year : " +" - Luong : "+nv[i].getLuong() );
 		}
 	}
 }
